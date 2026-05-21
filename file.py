@@ -55,5 +55,11 @@ with open('path/new_data.txt', 'w') as f:
     f.write('anything ') # this will bet printed inside new data txt file
     f.writelines(lines_data) # lines_data is some list of lines and here we used writelines for multiple lines writing
 
+
+# append mode is there
+# this helps us to preserve the earlier data
+with open('path/new_data.txt', 'a') as f:
+    f.write('anything ') # this will bet printed inside new data txt file
+    f.writelines(lines_data)
 # we can pass string, sequece list of string to write
     
